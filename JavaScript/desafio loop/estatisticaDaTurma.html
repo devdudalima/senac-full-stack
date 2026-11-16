@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nota = 0
+        let soma = 0
+        let media = 0
+        let maiorNota = 0
+        let menorNota = 100
+
+        for( c = 0; c <= 4; c++) {
+
+            nota = Number(prompt('digite a nota do aluno '))
+            soma = soma + nota 
+
+            if (nota > maiorNota) {
+                maiorNota = nota
+            }
+
+            if (nota < menorNota) {
+                menorNota = nota
+            }
+        }
+
+        media = soma / 5
+
+        console.log('soma da turma = ' + soma)
+        console.log('média da turma = ' + media)
+        console.log('maior nota = ' + maiorNota)
+        console.log('menor nota = ' + menorNota)
+
+    </script>
+</body>
+</html>
