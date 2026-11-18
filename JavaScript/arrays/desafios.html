@@ -7,7 +7,24 @@
 </head>
 <body>
     <script>
-        
+
+        let numero1 = Number(prompt('digite um número:'))
+        let numero2 = Number(prompt('digite outro número:'))
+        let op = prompt('qual operação deseja realizar?')
+        let resultado = 0
+
+        if ( op == '+' ) {
+           resultado = numero1 + numero2
+        } else if ( op == '-') {
+            resultado = numero1 - numero2
+        } else if ( op == '/' ) {
+            resultado = numero1 / numero2
+        } else if ( op == 'x' ) {
+            resultado = numero1 * numero2
+        }
+
+        alert( numero1 + ' ' + op + ' ' + numero2 + ' = ' + resultado)
+
     </script>
 </body>
 </html>
