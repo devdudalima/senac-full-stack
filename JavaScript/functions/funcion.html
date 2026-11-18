@@ -8,20 +8,33 @@
 <body>
     <script>
 
-        let nota = Number(prompt('digite sua nota:'))
+        let n1 = Number(prompt('escolha um numero:'))
+        let n2 = Number(prompt('escolha outro numero:'))
 
-        function resultado () {
-            if (nota >= 7) {
-            return 'aprovado'
 
-            } else if (nota >=5) {
-                return 'recuperação!'
-                
-            } else {
-                return 'reprovado!'
-            }
+        function somar (a, b) {
+            let soma = a + b
+            return soma
         }
-        alert('voce esta ' + resultado())
+
+        function subtrair (a, b) {
+            let sub = 0
+            if ( a > b ) {
+                sub = a - b
+            } else {
+                sub = b - a
+            }
+            return sub
+        }
+
+        function multiplicar (a, b) {
+            let mult = a*b
+            return mult
+        }
+
+        alert( 'soma: ' + somar(n1,n2))
+        alert( 'subtração: ' + subtrair(n1,n2))
+        alert( 'multiplicação: ' + multiplicar(n1,n2))
     </script>
 </body>
 </html>
