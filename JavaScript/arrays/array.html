@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //arrays guardam varios valores
+
+        let lista = [ 'maça', 'banana', 'leite', 'biscoito', 'suco']
+
+        lista.splice(1)
+
+        // mostrar elementos dos arrays
+
+        // for ( c = 0 ; c < lista.length ; c++) {
+        //    console.log(lista[c]) }
+
+        let compras = [ 
+        { nome: 'feijao' , preco: 8, promocao: false}, 
+        { nome: 'batata' , preco: 5, promocao: true},
+        { nome: 'arroz' , preco: 7, promocao: false},
+        { nome: 'carne' , preco: 15, promocao: false},
+        { nome: 'pipoca' , preco: 6, promocao: true}
+        ]
+
+        let produtosPromo = compras.filter( produto => produto.promocao == true )
+
+        // console.log('produtos em promocao: ', produtosPromo)
+
+
+
+        let numeros = [ 1, 5, 7, 6, 4, 8, 10]
+
+        // for (c = 0; c < numeros.length ; c++) {
+        //    if (numeros[c] % 2 == 0) {
+        //        console.log(numeros[c])
+        //    }
+        //}
+
+        let notas = []
+        //notas[0] = Number(prompt('digite a primeira nota:'))
+        //notas[1] = Number(prompt('digite a segunda nota:'))
+        //notas[2] = Number(prompt('digite a terceira nota:'))
+
+        let soma = notas[0] + notas[1] + notas[2]
+        
+        let media = soma / 3
+
+        //alert('sua media é igual a ' + media)
+
+        let frutas = ['maça', 'banana', 'abacaxi']
+
+        alert(frutas)
+
+        for ( c = 0; c < frutas.length; c++) {
+            if( frutas[c] == 'banana' ) {
+                frutas.splice( c , 1)
+            }
+        }
+
+        alert(frutas)
+
+
+
+    </script>
+</body>
+</html>
