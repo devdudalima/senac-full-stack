@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="cpf" maxlength="14">
+
+    <script>
+
+        const cpf = document.querySelector('#cpf')
+
+        cpf.addEventListener( 'input', (e) => {
+
+            let valor = e.target.value;
+
+            valor = valor.replace(/\D/g, "");
+
+            valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+            valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
+            valor = valor.replace(/(\d{3})(\d{2})$/, "$1−$2");
+
+            e.target.value = valor;
+        })
+
+    </script>
+</body>
+</html>
