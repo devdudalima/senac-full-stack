@@ -25,8 +25,10 @@ form {
     justify-content: center;
     gap: 10px;
     width: 50%;
+    max-width: 700px;
     padding: 70px 150px;
     border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.322);
 }
 
 h1 {
