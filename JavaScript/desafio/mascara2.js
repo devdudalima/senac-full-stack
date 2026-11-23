@@ -6,6 +6,8 @@ let endereco = document.getElementById('endereco')
 let uf = document.getElementById('uf')
 let senha = document.getElementById('senha')
 
+let btnVerificar = document.querySelector('#verificar')
+
 nome.addEventListener('input', (e) => {
     let valor = e.target.value
     valor = valor.replace(/[^a-zA-Z]/g, "");
@@ -115,3 +117,13 @@ senha.addEventListener('input', (e) => {
         reqEsp.classList.add('invalido')
     }
 })
+
+btnVerificar.addEventListener ('click', (e) => {
+    e.preventDefault
+    verificar
+})
+
+function verificar () {
+    console.log('verificou!')
+}
+
