@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="cep" maxlength="8">
+
+    <script>
+
+        const cepInput = document.querySelector('#cep')
+        cepInput.addEventListener('input', (e) => {
+            let valor = e.target.value;
+
+            valor = valor.replace(/\D/g, "");
+
+            valor = valor.replace(/(\d{5})(\d{4})$/, "$1 - $2");
+
+            e.target.value = valor
+
+        })
+
+    </script>
+</body>
+</html>
